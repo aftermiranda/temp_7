@@ -17,7 +17,7 @@ library(tidyverse)
 library(ggplot2)
 library(patchwork)
 
-temperature <- read.csv("average-temperatures.csv")
+temperature <- read.csv(url("https://raw.githubusercontent.com/aftermiranda/temp_7/main/average-temperatures.csv"), quote = "")
 ```
 
 This data, in it's current form, represents the daily average temperatures for each of 7 locations over the course of 53 weeks. The goal of the `temp_7` data type is to reduce the data to weekly averages, and provide summary information for local and country wide values.
